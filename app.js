@@ -4,6 +4,10 @@ const expressLayouts = require('express-ejs-layouts')
 
 const app = express()
 
+require('dotenv').config()
+
+const port = process.env.PORT || 3000;
+
 app.set('view engine', 'ejs')
 app.use(expressLayouts)
 
@@ -19,6 +23,6 @@ app.get('/', (req, res) => {
 })
 */
 
-app.listen(3000, () => {
-    console.log('corriendo en 3000')
-})
+app.listen(port, () => {
+    console.log(`Example app listening at http://localhost:${port}`)
+  })
