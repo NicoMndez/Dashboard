@@ -8,6 +8,8 @@ router.get('/Asesorias', vistaAsesorias)
 router.get('/Convenios', vistaConvenios)
 router.get('/Psocial', vistaPsocial)
 router.get('/Indicadores', vistaIndicadores)
+
+//para borrar luego
 router.get('/tables', vistaTablas)
 router.get('/notificaciones', vistaNotificaciones)
 
